@@ -1,0 +1,113 @@
+.sign-up {
+    padding: 10.2rem 0;
+    background-color: $color-dark-navy;
+    color: $color-white;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    @include responsive(table) {
+        padding: 6rem 0;
+    }
+    @include responsive(phone) {
+        padding: 8rem 0;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        @include responsive(table) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__title {
+        width: 100%;
+        max-width: 415px;
+        @include responsive(table) {
+            margin-bottom: 4rem;
+        }
+        @include responsive(phone) {
+            font-size: 3.2rem;
+        }
+    }
+    &__btn-wrapper {
+        display: flex;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        background-color: $color-light-gray;
+        padding: 0.8rem 1.5rem 0.9rem 1.6rem;
+        border-radius: 4px;
+        @include responsive(table) {
+            padding: 0.8rem 1.1rem 0.7rem 1.1rem;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        img {
+            width: 24px;
+            height: 28px;
+            object-fit: contain;
+            object-position: center;
+            margin-right: 1.2rem;
+            @include responsive(table) {
+                width: 17px;
+                height: 20px;
+            }
+        }
+        span:first-child {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.4;
+            color: $color-dark-navy;
+            letter-spacing: -0.45px;
+            @include responsive(table) {
+                font-size: 0.7rem;
+            }
+        }
+        span:last-child {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 1.2;
+            color: $color-dark-navy;
+            letter-spacing: -0.89px;
+            @include responsive(table) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    &__btn:not(:last-child) {
+        margin-right: 1.8rem;
+        @include responsive(table) {
+            margin-right: 1.1rem;
+        }
+    }
+    &__round {
+        display: inline-block;
+        width: 347px;
+        height: 347px;
+        border-radius: 50%;
+        border: 15px solid $color-light-gray;
+        opacity: 0.1;
+        position: absolute;
+        top: 50%;
+    }
+    &__round-one {
+        right: 643px;
+    }
+    &__round-two {
+        right: 240px;
+    }
+    &__round-three {
+        right: -173px;
+        background-color: $color-light-gray;
+        z-index: 1;
+    }
+}
