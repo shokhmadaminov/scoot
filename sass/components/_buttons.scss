@@ -1,0 +1,56 @@
+@mixin buttons {
+    border: 3px solid $color-yellow;
+    background-color: $color-yellow;
+    padding: 1.1rem 3.65rem;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.66;
+    color: $color-white;
+    display: inline-block;
+    transition: all .3s ease;
+}
+@mixin btn-hover {
+    border: 3px solid $color-yellow;
+    background-color: transparent;
+    color: $color-yellow;
+}
+
+.header__btn {
+    @include buttons;
+    &:hover {
+        @include btn-hover;
+    }
+    @include responsive(table) {
+        display: none;
+    }
+}
+
+.hero-home__btn {
+    @include buttons;
+    &:hover {
+        @include btn-hover;
+    }
+}
+
+
+.bars-btn {
+    padding: 0.5rem;
+    display: none;
+    &__img {
+        width: 20px;
+        height: 16px;
+        object-fit: contain;
+        object-position: center;
+    }
+    @include responsive(table) {
+        display: block;
+    }
+}
+
+.info__btn {
+    @include buttons;
+    &:hover {
+        @include btn-hover;
+    }
+}

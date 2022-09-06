@@ -1,0 +1,21 @@
+.sitenav {
+    margin-right: auto;
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    li:not(:last-child) {
+        margin-right: 3.2rem;
+    }
+    a {
+        color: $color-dim-gray;
+        font-weight: 700;
+        font-family: $title-font;
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+    @include responsive(table) {
+        display: none;
+    }
+}

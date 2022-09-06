@@ -1,0 +1,88 @@
+
+
+
+.hero-home {
+    background-image: url("../images/jpg/hero-home-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    color: $color-white;
+    padding: 15.2rem 0;
+    @include responsive(table) {
+        padding: 13.7rem 0 21.7rem;
+    }
+    @include responsive(phone) {
+        background-position: center right;
+    }
+    &__text-wrapper {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        @include responsive(table) {
+            align-items: center;
+        }
+    }
+    &__title {
+        margin-bottom: 4rem;
+        @include responsive(table) {
+            margin-bottom: 2.4rem;
+        }
+        @include responsive(phone) {
+            font-size: 4rem;
+            letter-spacing: -1.79px;
+        }
+    }
+    &__text-list {
+        width: 100%;
+        max-width: 405px;
+    }
+    &__text {
+        margin-bottom: 4rem;
+        position: relative;
+        @include responsive(table) {
+            margin-bottom: 3.2rem;
+        }
+        span {
+            display: inline-block;
+            width: 202px;
+            height: 15px;
+            background-color: $color-yellow;
+            position: absolute;
+            top: 50%;
+            left: -57px;
+            transform: translateX(-100%);
+            @include responsive(table) {
+                display: none;
+            }
+        }
+    }
+    @include responsive(table) {
+        text-align: center;
+        & .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        bottom: 10px;
+        right: -40px;
+        transform: translate(100%, 0%);
+        @include responsive(table) {
+            transform: translate(0%, 100%);
+            right: 0px;
+            bottom: -40px;
+            left: -250px;
+        }
+        @include responsive(m-phone) {
+            transform: translate(0%, 100%);
+            right: 0px;
+            bottom: -40px;
+            left: -300px;
+        }
+    }
+}
