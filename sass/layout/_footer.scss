@@ -1,0 +1,37 @@
+.footer {
+    background-color: $color-footer;
+    padding: 3.4rem 0;
+    @include responsive(phone) {
+        padding: 6rem 0 8.8rem;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        @include responsive(phone) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    &__social-media {
+        display: flex;
+        align-items: center;
+        a {
+            display: flex;
+        }
+        a path {
+            transition: all 0.3s ease;
+        }
+        a:hover path {
+            fill: $color-white;
+        }
+        li:not(:last-child) {
+            margin-right: 2.4rem;
+        }
+    }
+    &__logo {
+        @include responsive(phone) {
+            margin-bottom: 4.1rem;
+        }
+    }
+}

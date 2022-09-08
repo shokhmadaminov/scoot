@@ -1,0 +1,72 @@
+.services {
+    margin-bottom: 12rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 10rem;
+        @include responsive(phone) {
+            font-size: 3.2rem;
+            margin-bottom: 6rem;
+        }
+    }
+    ol {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        column-gap: 3rem;
+        row-gap: 5rem;
+        @include responsive(table) {
+            width: 100%;
+            max-width: 573px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            margin: 0 auto;
+        }
+        @include responsive(phone) {
+            width: 100%;
+            max-width: 311px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin: 0 auto;
+            column-gap: 0rem;
+        }
+        @include responsive(m-phone) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__img-wrapper {
+        margin-bottom: 8.7rem;
+        position: relative;
+        @include responsive(phone) {
+            margin-bottom: 6.4rem;
+        }
+    }
+    h4 {
+        margin-bottom: 2.7rem;
+    }
+    p {
+        color: $color-dim-gray
+    }
+    span {
+        width: 96px;
+        height: 96px;
+        background-color: $color-yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.16;
+        letter-spacing: -1.07px;
+        color: $color-dark-navy;
+        position: absolute;
+        bottom: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

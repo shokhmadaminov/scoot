@@ -1,0 +1,52 @@
+.main-top {
+    padding: 7.2rem 0;
+    margin-bottom: 12rem;
+    background-image: linear-gradient(rgba(47, 59, 89, 0.75)100%, rgba(47, 59, 89, 0.75)100%), url("../images/jpg/about-main-top-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, top 43% center;
+    position: relative;
+    @include responsive(phone) {
+        background-position: center, top 48% center;
+        padding: 6rem 0;
+    }
+    .container {
+        display: flex;
+        @include responsive(phone) {
+            justify-content: center;
+        }
+    }
+    &__title {
+        color: $color-white;
+        @include responsive(phone) {
+            font-size: 4rem;
+        }
+    }
+    span {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: solid 3px $color-white;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include responsive(table) {
+            width: 62px;
+            height: 62px;
+        }
+        @include responsive(phone) {
+            display: none;
+        }
+    }
+    span:nth-child(2) {
+        right: 141px;
+    }
+    span:nth-child(3) {
+        right: 55px;
+    }
+    span:last-child {
+        background-color: $color-white;
+        right: -32px;
+    }
+}

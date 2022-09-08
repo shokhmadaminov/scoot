@@ -15,7 +15,25 @@
             color: $color-yellow;
         }
     }
+}
+
+.header__nav {
     @include responsive(table) {
         display: none;
+    }
+}
+
+.footer__nav {
+    @include responsive(phone) {
+        margin-right: 0;
+        ul {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 7.5rem;
+        }
+        li:not(:last-child) {
+            margin-right: 0rem;
+            margin-bottom: 1.6rem;
+        }
     }
 }
