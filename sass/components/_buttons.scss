@@ -54,3 +54,11 @@
         @include btn-hover;
     }
 }
+
+.professions__btn {
+    @include buttons;
+    padding: 1.4rem 6.7rem;
+    &:hover {
+        @include btn-hover;
+    }
+}

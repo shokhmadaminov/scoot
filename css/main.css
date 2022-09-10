@@ -851,6 +851,27 @@ h4 {
   right: -32px;
 }
 
+.careers-main-top {
+  background-image: linear-gradient(rgba(47, 59, 89, 0.75) 100%, rgba(47, 59, 89, 0.75) 100%), url("../images/jpg/about-main-top-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, 120%;
+  background-position: center, bottom -100px right;
+}
+@media only screen and (max-width: 768px) {
+  .careers-main-top {
+    background-repeat: no-repeat;
+    background-size: cover, 170%;
+    background-position: center, bottom -50px right -110px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .careers-main-top {
+    background-repeat: no-repeat;
+    background-size: cover, 150%;
+    background-position: center, bottom -40px right -110px;
+  }
+}
+
 .select {
   margin-bottom: 16rem;
 }
@@ -955,6 +976,58 @@ h4 {
   object-position: center;
 }
 
+.professions {
+  margin-bottom: 16rem;
+}
+@media only screen and (max-width: 576px) {
+  .professions {
+    margin-bottom: 12rem;
+  }
+}
+.professions ul {
+  display: flex;
+  flex-direction: column;
+}
+.professions li {
+  padding: 3.2rem 6.4rem 3.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f5f9;
+}
+.professions li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 576px) {
+  .professions li:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .professions li {
+    padding: 3.4rem 4.5rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .professions li {
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    padding: 3.6rem 3.2rem 3.2rem;
+  }
+}
+.professions h4 {
+  margin-bottom: 4px;
+}
+@media only screen and (max-width: 576px) {
+  .professions h4 {
+    font-size: 1.8rem;
+  }
+}
+.professions p {
+  margin-bottom: 1.6rem;
+}
+
 .header__btn {
   border: 3px solid #fcb72b;
   background-color: #fcb72b;
@@ -1025,6 +1098,25 @@ h4 {
   transition: all 0.3s ease;
 }
 .info__btn:hover {
+  border: 3px solid #fcb72b;
+  background-color: transparent;
+  color: #fcb72b;
+}
+
+.professions__btn {
+  border: 3px solid #fcb72b;
+  background-color: #fcb72b;
+  padding: 1.1rem 3.65rem;
+  font-family: "Space Mono", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.66;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.3s ease;
+  padding: 1.4rem 6.7rem;
+}
+.professions__btn:hover {
   border: 3px solid #fcb72b;
   background-color: transparent;
   color: #fcb72b;

@@ -81,3 +81,46 @@
         object-position: center;
     }
 }
+
+
+.professions {
+    margin-bottom: 16rem;
+    @include responsive(phone) {
+        margin-bottom: 12rem;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        padding: 3.2rem 6.4rem 3.5rem 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-snow;
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+            @include responsive(phone) {
+                margin-bottom: 1.6rem;
+            }
+        }
+        @include responsive(table) {
+            padding: 3.4rem 4.5rem;
+        }
+        @include responsive(phone) {
+            flex-direction: column;
+            text-align: center;
+            align-items: stretch;
+            padding: 3.6rem 3.2rem 3.2rem;
+        }
+    }
+    h4 {
+        margin-bottom: 4px;
+        @include responsive(phone) {
+            font-size: 1.8rem;
+        }
+    }
+    p {
+        margin-bottom: 1.6rem;
+    }
+}

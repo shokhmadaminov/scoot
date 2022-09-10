@@ -50,3 +50,20 @@
         right: -32px;
     }
 }
+
+.careers-main-top {
+    background-image: linear-gradient(rgba(47, 59, 89, 0.75)100%, rgba(47, 59, 89, 0.75)100%), url("../images/jpg/about-main-top-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover, 120%;
+    background-position: center, bottom  -100px right;
+    @include responsive(table) {
+        background-repeat: no-repeat;
+        background-size: cover, 170%;
+        background-position: center, bottom -50px right -110px;
+    }
+    @include responsive(phone) {
+        background-repeat: no-repeat;
+        background-size: cover, 150%;
+        background-position: center, bottom -40px right -110px;
+    }
+}
