@@ -62,3 +62,12 @@
         @include btn-hover;
     }
 }
+
+
+.location-info__btn {
+    @include buttons;
+    padding: 1.4rem 4.4rem;
+    &:hover {
+        @include btn-hover;
+    }
+}

@@ -1120,4 +1120,135 @@ h4 {
   border: 3px solid #fcb72b;
   background-color: transparent;
   color: #fcb72b;
+}
+
+.location-info__btn {
+  border: 3px solid #fcb72b;
+  background-color: #fcb72b;
+  padding: 1.1rem 3.65rem;
+  font-family: "Space Mono", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.66;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.3s ease;
+  padding: 1.4rem 4.4rem;
+}
+.location-info__btn:hover {
+  border: 3px solid #fcb72b;
+  background-color: transparent;
+  color: #fcb72b;
+}
+
+@media only screen and (max-width: 576px) {
+  .location-main-top {
+    margin-bottom: 7rem;
+  }
+}
+
+.location-image {
+  margin-bottom: 12rem;
+}
+@media only screen and (max-width: 768px) {
+  .location-image {
+    margin-bottom: 6.4rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .location-image {
+    margin-bottom: 7.2rem;
+  }
+}
+.location-image img {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 576px) {
+  .location-image img:nth-child(1) {
+    display: none;
+  }
+}
+.location-image img:nth-child(2) {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .location-image img:nth-child(2) {
+    display: block;
+  }
+}
+.location-image ul {
+  margin-top: 4rem;
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .location-image ul {
+    display: block;
+  }
+}
+.location-image li {
+  padding: 2.2rem;
+  text-align: center;
+  background-color: rgba(252, 183, 43, 0.15);
+}
+.location-image li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.location-info {
+  margin-bottom: 12rem;
+}
+@media only screen and (max-width: 576px) {
+  .location-info {
+    margin-bottom: 7rem;
+  }
+}
+.location-info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 992px) {
+  .location-info .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+}
+.location-info h2 {
+  width: 100%;
+  max-width: 305px;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 992px) {
+  .location-info h2 {
+    max-width: 460px;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .location-info h2 {
+    max-width: 311px;
+    font-size: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+}
+.location-info p {
+  width: 100%;
+  max-width: 445px;
+  color: #939caa;
+}
+@media only screen and (max-width: 992px) {
+  .location-info p {
+    max-width: 573px;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .location-info p {
+    margin-bottom: 3.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
