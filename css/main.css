@@ -914,6 +914,7 @@ h4 {
   font-weight: 700;
   font-size: 4rem;
   line-height: 1.2;
+  user-select: none;
 }
 @media only screen and (max-width: 768px) {
   .select h3 {
@@ -960,6 +961,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  user-select: none;
 }
 @media only screen and (max-width: 576px) {
   .select h4 {
@@ -974,6 +976,21 @@ h4 {
   height: 8px;
   object-fit: contain;
   object-position: center;
+  transition: transform 0.2s linear;
+}
+.select .select-icon-rotate {
+  transform: rotate(180deg);
+}
+.select p {
+  margin-top: 2.4rem;
+  display: none;
+  transition: color 0.3s linear;
+  user-select: none;
+}
+
+.select__paragraph {
+  display: block !important;
+  transition: color 0.3s linear;
 }
 
 .professions {
